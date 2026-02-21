@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azerbaycan Zone</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* --- Основные стили --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- Навигация --- */
+nav {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+nav .logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #f9ca24;
+}
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+nav ul li {
+    list-style: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+nav ul li:hover {
+    color: #f9ca24;
+}
+
+/* --- Баннер --- */
+.banner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    animation: fadeIn 1.5s ease-out;
+}
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #f9ca24;
+}
+.banner p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.banner .btn {
+    padding: 15px 35px;
+    background: #f9ca24;
+    color: #0f2027;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.banner .btn:hover {
+    transform: scale(1.05);
+}
+
+/* --- Секции --- */
+section {
+    padding: 100px 50px;
+}
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #f9ca24;
+}
+section p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* --- Темная тема + градиенты --- */
+.about {
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    margin-bottom: 50px;
+    padding: 50px 20px;
+}
+.rules, .contacts {
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    margin-bottom: 50px;
+    padding: 50px 20px;
+}
+
+/* --- Анимации --- */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(50px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* --- Адаптив --- */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    .banner h1 {
+        font-size: 2.2rem;
+    }
+    .banner p {
+        font-size: 1rem;
+    }
+    section {
+        padding: 70px 20px;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- Навигация -->
+<nav>
+    <div class="logo">Azerbaycan Zone</div>
+    <ul>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#rules">Правила</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+        <li><a href="https://t.me/azzerbaycan01" target="_blank">Войти в чат</a></li>
+    </ul>
+</nav>
+
+<!-- Баннер -->
+<section class="banner">
+    <h1>Azerbaycan Zone</h1>
+    <p>Azerbaycan Zone — это современная платформа для общения, дружбы и новых знакомств. Здесь вы можете свободно общаться с другими людьми и находить новых друзей.</p>
+    <a href="https://t.me/azzerbaycan01" target="_blank" class="btn">Войти в чат</a>
+</section>
+
+<!-- О нас -->
+<section class="about" id="about">
+    <h2>О нас</h2>
+    <p>Azerbaycan Zone отражает культуру и цвета Азербайджана, создавая комфортное пространство для общения. Мы ценим дружелюбие, уважение и открытость к новым знакомствам.</p>
+</section>
+
+<!-- Правила -->
+<section class="rules" id="rules">
+    <h2>Правила</h2>
+    <p>1. Уважение и вежливость — обязательны.<br>
+       2. Спам и реклама запрещены.<br>
+       3. Личные данные других участников нельзя раскрывать.<br>
+       4. Поощряются конструктивные обсуждения.<br>
+       5. Нарушители правил могут быть заблокированы.</p>
+</section>
+
+<!-- Контакты -->
+<section class="contacts" id="contacts">
+    <h2>Контакты</h2>
+    <p>Связь с нами через Telegram: <a href="https://t.me/Juni77" target="_blank">@Juni77</a></p>
+</section>
+
+</body>
+</html>
